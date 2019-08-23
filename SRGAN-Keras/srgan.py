@@ -303,7 +303,7 @@ class SRGAN():
             image = combine_images(generated_images)
             image.save("./images/%s%d.png" % (ite,i))
             print(i)
-        os.makedirs(os.path.join(".", "gen_images"), exist_ok=True)
+        os.makedirs(os.path.join(".", "images"), exist_ok=True)
         image.save("./images/%s%d.png" % (ite,i))            
 
 def combine_images(generated_images, cols=5, rows=5):
